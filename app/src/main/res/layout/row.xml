@@ -27,26 +27,25 @@
 
     <ImageView
         android:layout_width="80sp"
-        android:layout_height="40sp"
-        android:layout_alignParentRight="true"
+        android:layout_height="60sp"
         android:contentDescription="logo"
         android:src="@drawable/money"
-        android:id="@+id/imageView"
+        android:id="@+id/upImageView"
         android:onClick="upUser"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentTop="true" />
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toLeftOf="@+id/deleteImageView"
+        android:layout_marginRight="20dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="#FFFFFF"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:text="Удалить"
-        android:textColor="#0099CC"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/imageView"
-        android:layout_toStartOf="@+id/imageView" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:contentDescription="trash"
+        android:src="@drawable/trash"
+        android:id="@+id/deleteImageView"
+        android:layout_alignTop="@+id/upImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/upImageView"
+        android:layout_marginRight="10dp" />
 
 </RelativeLayout>

@@ -40,8 +40,8 @@ public class UserCustomAdapter extends ArrayAdapter<User> {
             holder = new UserHolder();
             holder.name = (TextView) row.findViewById(R.id.textView1);
             holder.date = (TextView) row.findViewById(R.id.textView2);
-            holder.btnDelete = (Button) row.findViewById(R.id.button2);
-            holder.imageView = (ImageView) row.findViewById(R.id.imageView);
+            holder.btnDelete = (ImageView) row.findViewById(R.id.deleteImageView);
+            holder.imageView = (ImageView) row.findViewById(R.id.upImageView);
             row.setTag(holder);
         } else {
             holder = (UserHolder) row.getTag();
@@ -83,7 +83,7 @@ public class UserCustomAdapter extends ArrayAdapter<User> {
     static class UserHolder {
         TextView name;
         TextView date;
-        Button btnDelete;
+        ImageView btnDelete;
         ImageView imageView;
     }
 }
